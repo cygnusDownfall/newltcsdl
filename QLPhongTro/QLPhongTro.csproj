@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1530B92-7E78-4587-AE85-AAAC51E8E7D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLPhongTro</RootNamespace>
+    <AssemblyName>QLPhongTro</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\KTBUS.cs" />
+    <Compile Include="BUS\KVBUS.cs" />
+    <Compile Include="BUS\PCBUS.cs" />
+    <Compile Include="BUS\PTBUS.cs" />
+    <Compile Include="BUS\TKBUS.cs" />
+    <Compile Include="DAO\KNCSDL.cs" />
+    <Compile Include="DAO\KTDAO.cs" />
+    <Compile Include="DAO\KVDAO.cs" />
+    <Compile Include="DAO\PCDAO.cs" />
+    <Compile Include="DAO\PTDAO.cs" />
+    <Compile Include="DAO\TKDAO.cs" />
+    <Compile Include="DTO\KTDTO.cs" />
+    <Compile Include="DTO\NhapPCDTO.cs" />
+    <Compile Include="DTO\PCDTO.cs" />
+    <Compile Include="DTO\PTDTO.cs" />
+    <Compile Include="DTO\TKDTO.cs" />
+    <Compile Include="GUI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQLKT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQLKT.Designer.cs">
+      <DependentUpon>frmQLKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQLKV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQLKV.Designer.cs">
+      <DependentUpon>frmQLKV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQLPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQLPC.Designer.cs">
+      <DependentUpon>frmQLPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQLPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQLPT.Designer.cs">
+      <DependentUpon>frmQLPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQLTK.Designer.cs">
+      <DependentUpon>frmQLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NhapPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NhapPC.Designer.cs">
+      <DependentUpon>NhapPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QLTraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QLTraPhong.Designer.cs">
+      <DependentUpon>QLTraPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QLTTThuePhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QLTTThuePhong.Designer.cs">
+      <DependentUpon>QLTTThuePhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQLKT.resx">
+      <DependentUpon>frmQLKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQLKV.resx">
+      <DependentUpon>frmQLKV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQLPC.resx">
+      <DependentUpon>frmQLPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQLPT.resx">
+      <DependentUpon>frmQLPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQLTK.resx">
+      <DependentUpon>frmQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NhapPC.resx">
+      <DependentUpon>NhapPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QLTraPhong.resx">
+      <DependentUpon>QLTraPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QLTTThuePhong.resx">
+      <DependentUpon>QLTTThuePhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\img01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\img02.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

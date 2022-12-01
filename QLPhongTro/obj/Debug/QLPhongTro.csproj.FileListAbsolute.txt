@@ -1,0 +1,35 @@
+E:\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.exe.config
+E:\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.exe
+E:\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.pdb
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csprojResolveAssemblyReference.cache
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.Form1.resources
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.Properties.Resources.resources
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.GenerateResource.Cache
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.exe
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.pdb
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmMenu.resources
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLPT.resources
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLKT.resources
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLTK.resources
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLPC.resources
+E:\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.NhapPC.resources
+E:\New folder\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.exe.config
+E:\New folder\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.exe
+E:\New folder\QLPhongTro\QLPhongTro\bin\Debug\QLPhongTro.pdb
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.AssemblyReference.cache
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.SuggestedBindingRedirects.cache
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.Form1.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmMenu.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLKT.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLKV.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLPC.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLPT.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLTK.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.NhapPC.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.Properties.Resources.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.GenerateResource.cache
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.csproj.CoreCompileInputs.cache
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.exe
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.pdb
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.QLTTThuePhong.resources
+E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.QLTraPhong.resources
