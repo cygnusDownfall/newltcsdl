@@ -16,7 +16,7 @@ namespace QLPhongTro.DAO
         {
             try
             {
-                string sqlcon = @"Data Source=DOWNFALL;Initial Catalog=QLPT;Integrated Security=True";
+                string sqlcon = @"Data Source=DESKTOP-PDAKNK0\SQLEXPRESS;Initial Catalog=QLPT;Integrated Security=True";
                 cnn.ConnectionString = sqlcon;
                 if (cnn.State == ConnectionState.Closed)
                     cnn.Open();

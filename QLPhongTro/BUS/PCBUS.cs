@@ -11,14 +11,24 @@ namespace QLPhongTro.BUS
 {
     class PCBUS
     {
-        public static void XoaPC(NhapPCDTO pc)
+        public static void ThemPC(PCDTO pc)
         {
-            if(MessageBox.Show("Bạn có muốn xóa phiếu chi này!","Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            try
+            {
+                PCDAO.ThemPC(pc);
+            }
+            catch
+            {
+                MessageBox.Show("Thêm phiếu chi thành công!");
+            }
+        }
+        public static void XoaPC(PCDTO pc)
+        {
+            if (MessageBox.Show("Bạn có muốn xóa phiếu chi này!", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 try
                 {
                     PCDAO.XoaPC(pc);
-                    PCDAO.XoaDSPC(pc);
                 }
                 catch
                 {
@@ -26,7 +36,7 @@ namespace QLPhongTro.BUS
                 }
             }
         }
-        public static void CapNhatPC(NhapPCDTO pc)
+        public static void CapNhatPC(PCDTO pc)
         {
             if (MessageBox.Show("Bạn có muốn cập nhật phiếu chi này!", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {

@@ -33,3 +33,23 @@ E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.exe
 E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.pdb
 E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.QLTTThuePhong.resources
 E:\New folder\QLPhongTro\QLPhongTro\obj\Debug\QLPhongTro.GUI.QLTraPhong.resources
+C:\Users\User\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\bin\Debug\QLPhongTro.exe.config
+C:\Users\User\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.exe
+C:\Users\User\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.pdb
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\bin\Debug\QLPhongTro.exe.config
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.exe
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.pdb
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\bin\Debug\QLPhongTro.exe
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\bin\Debug\QLPhongTro.pdb
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.csprojResolveAssemblyReference.cache
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.Form1.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmMenu.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLKT.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLKV.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLPC.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLPT.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.GUI.frmQLTK.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.GUI.QLTraPhong.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.GUI.QLTTThuePhong.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.Properties.Resources.resources
+E:\Source\Repos\cygnusDownfall\newltcsdl\QLPhongTro\obj\Debug\QLPhongTro.csproj.GenerateResource.Cache

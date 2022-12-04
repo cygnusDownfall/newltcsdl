@@ -34,11 +34,12 @@ namespace QLPhongTro.GUI
             DataTable dt = new DataTable();
             dt = PCDAO.TTPC();
             int sodong = dt.Rows.Count;
-            for(int i = 0; i < sodong; i++)
+            for (int i = 0; i < sodong; i++)
             {
-                lvds.Items.Add(dt.Rows[i]["MaDSChi"].ToString());
-                lvds.Items[i].SubItems.Add(dt.Rows[i]["TongTien"].ToString());
+                lvds.Items.Add(dt.Rows[i]["MaPC"].ToString());
+                lvds.Items[i].SubItems.Add(dt.Rows[i]["SoTien"].ToString());
                 lvds.Items[i].SubItems.Add(dt.Rows[i]["NgayChi"].ToString());
+                lvds.Items[i].SubItems.Add(dt.Rows[i]["Lydo"].ToString());
                 lvds.Items[i].SubItems.Add(dt.Rows[i]["MaPhong"].ToString());
             }
         }
@@ -49,32 +50,10 @@ namespace QLPhongTro.GUI
             TT_PC();
         }
 
-        private void lvds_Click(object sender, EventArgs e)
-        {
-            txtmapchi.Text = lvds.SelectedItems[0].SubItems[0].Text;
-            txttien.Text= lvds.SelectedItems[0].SubItems[1].Text;
-            dtpngaychi.Text= lvds.SelectedItems[0].SubItems[2].Text;
-            DataTable dt = new DataTable();
-            dt = PCDAO.Tenphong_maphong(lvds.SelectedItems[0].SubItems[3].Text);
-            cbphong.Text = dt.Rows[0][0].ToString();
-
-            DataTable dtpc = new DataTable();
-            PCDTO pc = new PCDTO();
-            pc.Madschi = lvds.SelectedItems[0].SubItems[0].Text;
-            dt = PCDAO.TTNPC();
-            lvtt.Items.Clear();
-            int sodong = dt.Rows.Count;
-            for (int i = 0; i < sodong; i++)
-            {
-                lvtt.Items.Add(dt.Rows[i][3].ToString());
-                lvtt.Items[i].SubItems.Add(dt.Rows[i][1].ToString());
-            }
-        }
-
         private void btnxoa_Click(object sender, EventArgs e)
         {
-            NhapPCDTO pc = new NhapPCDTO();
-            pc.Madschi = txtmapchi.Text;
+            PCDTO pc = new PCDTO();
+            pc.Mapc = txtmapchi.Text;
             PCBUS.XoaPC(pc);
             lvds.Items.Clear();
             TT_PC();
@@ -82,10 +61,11 @@ namespace QLPhongTro.GUI
 
         private void btncapnhat_Click(object sender, EventArgs e)
         {
-            NhapPCDTO pc = new NhapPCDTO();
-            pc.Madschi = txtmapchi.Text;
+            PCDTO pc = new PCDTO();
+            pc.Mapc = txtmapchi.Text;
             pc.Sotien = int.Parse(txttien.Text);
             pc.Ngaychi = dtpngaychi.Value.ToString("MM/dd/yyyy");
+            pc.Lydo = txtlydo.Text;
             pc.Maphong = cbphong.SelectedValue.ToString();
             PCBUS.CapNhatPC(pc);
             lvds.Items.Clear();
@@ -94,8 +74,43 @@ namespace QLPhongTro.GUI
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            NhapPC pc = new NhapPC();
-            pc.ShowDialog();
+            DataTable dt = new DataTable();
+            dt = PCDAO.PC_Max();
+            string mapc = dt.Rows[0][0].ToString();
+            txtmapchi.Text = (int.Parse(mapc.Substring(mapc.Length - 1, 1)) + 1).ToString("PC00");
+        }
+
+        private void btnlammoi_Click(object sender, EventArgs e)
+        {
+            txtmapchi.Text = "";
+            txttien.Text = "";
+            txtlydo.Text = "";
+            dtpngaychi.Text = "";
+            cbphong.Text = "";
+        }
+
+        private void btnghi_Click(object sender, EventArgs e)
+        {
+            PCDTO pc = new PCDTO();
+            pc.Mapc = txtmapchi.Text;
+            pc.Sotien = int.Parse(txttien.Text);
+            pc.Ngaychi = dtpngaychi.Value.ToString("MM/dd/yyyy");
+            pc.Lydo = txtlydo.Text;
+            pc.Maphong = cbphong.SelectedValue.ToString();
+            PCBUS.ThemPC(pc);
+            lvds.Items.Clear();
+            TT_PC();
+        }
+
+        private void lvds_Click_1(object sender, EventArgs e)
+        {
+            txtmapchi.Text = lvds.SelectedItems[0].SubItems[0].Text;
+            txttien.Text = lvds.SelectedItems[0].SubItems[1].Text;
+            dtpngaychi.Text = lvds.SelectedItems[0].SubItems[2].Text;
+            txtlydo.Text = lvds.SelectedItems[0].SubItems[3].Text;
+            DataTable dt = new DataTable();
+            dt = PCDAO.Tenphong_maphong(lvds.SelectedItems[0].SubItems[4].Text);
+            cbphong.Text = dt.Rows[0][0].ToString();
         }
     }
 }

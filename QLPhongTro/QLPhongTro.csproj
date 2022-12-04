@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QLPhongTro</RootNamespace>
     <AssemblyName>QLPhongTro</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -59,7 +59,6 @@
     <Compile Include="DAO\PTDAO.cs" />
     <Compile Include="DAO\TKDAO.cs" />
     <Compile Include="DTO\KTDTO.cs" />
-    <Compile Include="DTO\NhapPCDTO.cs" />
     <Compile Include="DTO\PCDTO.cs" />
     <Compile Include="DTO\PTDTO.cs" />
     <Compile Include="DTO\TKDTO.cs" />
@@ -105,12 +104,6 @@
     <Compile Include="GUI\frmQLTK.Designer.cs">
       <DependentUpon>frmQLTK.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\NhapPC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\NhapPC.Designer.cs">
-      <DependentUpon>NhapPC.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\QLTraPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,9 +138,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQLTK.resx">
       <DependentUpon>frmQLTK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\NhapPC.resx">
-      <DependentUpon>NhapPC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QLTraPhong.resx">
       <DependentUpon>QLTraPhong.cs</DependentUpon>

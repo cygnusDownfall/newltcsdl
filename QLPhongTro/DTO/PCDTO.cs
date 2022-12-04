@@ -8,34 +8,49 @@ namespace QLPhongTro.DTO
 {
     class PCDTO
     {
-        private string _madschi,_ngaychi,_maphong;
-        private int _tongtien;
+        private string _mapc, _lydo, _ngaychi, _maphong;
+        private int _sotien;
 
         public PCDTO()
         {
-            this.Madschi = "";
+            this.Mapc = "";
+            this.Lydo = "";
             this.Ngaychi = "";
             this.Maphong = "";
-            this.Tongtien = 0;
+            this.Sotien = 0;
         }
-        public PCDTO(string _madschi, int _tongtien)
+        public PCDTO(string _mapc, string _lydo, string _ngaychi, string _maphong, int _sotien)
         {
-            this.Madschi = _madschi;
-            this.Tongtien = _tongtien;
+            this.Mapc = _mapc;
+            this.Lydo = _lydo;
             this.Ngaychi = _ngaychi;
             this.Maphong = _maphong;
+            this.Sotien = _sotien;
         }
 
-        public string Madschi
+        public string Lydo
         {
             get
             {
-                return _madschi;
+                return _lydo;
             }
 
             set
             {
-                _madschi = value;
+                _lydo = value;
+            }
+        }
+
+        public string Mapc
+        {
+            get
+            {
+                return _mapc;
+            }
+
+            set
+            {
+                _mapc = value;
             }
         }
 
@@ -65,16 +80,16 @@ namespace QLPhongTro.DTO
             }
         }
 
-        public int Tongtien
+        public int Sotien
         {
             get
             {
-                return _tongtien;
+                return _sotien;
             }
 
             set
             {
-                _tongtien = value;
+                _sotien = value;
             }
         }
     }
